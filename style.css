@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#Home {
+    background-color: #153448;
+    height:auto;
+}
+
+.title {
+    color: white;
+    font-family: "Ma Shan Zheng", cursive;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+
+p {
+    color: white;
+    font-family: "Sedan SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.home {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+h2 {
+    font-size: 4rem;
+    font-family: "Sedan SC", serif;
+    font-weight: bold;
+    font-style: normal;
+    color:white;
+    text-align: center;
+}
+
+
+#About {
+    background-color: #3C5B6F;
+    height: auto;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr auto;
+    margin-bottom: 3rem;
+}
+
+.about-me {
+    display:flex;
+    justify-content: center;
+    grid-column: span 2;
+}
+
+.profile-picture>img {
+    width: auto;
+    height: 40vh;
+    border-radius: 10px;
+}
+
+.profile-picture {
+    display:flex;
+    justify-content: center;
+}
+
+.about-p {
+    display:flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+@media (max-width: 1000px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-p {
+        text-align: center;
+        font-size: auto;
+        font-size: 1.5rem;
+    }
+    .profile-picture>img {
+        width: auto;
+        height: 35vh;
+        border-radius: 10px;
+    }
+    .portfolio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
+#Portfolio {
+    background-color: #948979;
+    height: auto;
+}
+
+.card-body {
+    background-color: darkgray;
+}
+
+button {
+    margin-right: 1rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+    font-family: "Sedan SC", serif;
+    font-weight: bold;
+    font-style: normal;
+    color:white;
+}
+
+#Portfolio img {
+    height: 225px;
+}
+
+#Contact {
+    background-color: #DFD0B8;
+    height: auto;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 2rem;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.contact p {
+    text-align: left;
+}
+
+.card {
+    border: solid black;
+}
